@@ -1,0 +1,175 @@
+package com.flashback.christmaspresent;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.View;
+import android.widget.EditText;
+
+public class MainActivity extends Activity {
+
+/*
+ * Variablen definieren
+ */
+	boolean mainisopen = true;
+	boolean checkBisopen = true; 
+	boolean checkB2isopen = true;
+
+/*
+ * @see android.app.Activity#onCreate(android.os.Bundle)
+ */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);		
+	
+	}
+/*
+ * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+ */
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+/*
+ * oeffnen der checkbox_acticity_first
+ */
+	public void FirstActivity (View view) {
+		setContentView(R.layout.activity_checkbox); 
+		mainisopen = false;
+		checkBisopen = false; 
+	}
+	
+	
+/*
+ * oeffnen der first_coupon_activity 
+ */
+	public void FirstCoupon (View view) {
+		setContentView(R.layout.activity_first_coupon);
+		mainisopen = false;
+	}
+/*
+ * anzeigen des gutschein_first	
+ */
+	public void BtnFirstCoupon (View view ) {
+
+		EditText Gutschein1 = (EditText)findViewById(R.id.etGutschein1);
+		Gutschein1.setText("Ein Gutschein für einen Kinobesuch deiner Wahl!"); 
+		mainisopen = false;
+		checkBisopen = false; 
+	}
+/*
+ * oeffnen der secound_coupon_activity
+ */
+	public void SecoundCoupon (View View) {
+		setContentView(R.layout.activity_secound_coupon);
+		mainisopen = false;
+		checkBisopen = false; 
+	}
+/*
+* anzeigen des gutschein_secound	
+*/
+		public void BtnSecoundCoupon (View view ) {
+
+			EditText Gutschein2 = (EditText)findViewById(R.id.etGutschein2);
+			Gutschein2.setText("Ein Gutschein zum Essen gehen deiner Wahl!"); 
+			mainisopen = false;
+			checkBisopen = false; 
+		}
+		
+/*
+ * oeffnen der third_coupon_activity 
+ */
+		public void ThirdCoupon (View view) {
+				setContentView(R.layout.activity_third_coupon);
+				mainisopen = false;
+			}
+/*
+ * anzeigen des gutschein_third	
+ */
+		public void BtnThirdCoupon (View view ) {
+
+				EditText Gutschein3 = (EditText)findViewById(R.id.etGutschein3);
+				Gutschein3.setText("Ein Gutschein für eine Massage!"); 
+				mainisopen = false;
+				checkBisopen = false; 
+			}		
+/*
+ * oeffnen der fourth_coupon_activity 
+ */
+			public void FourthCoupon (View view) {
+					setContentView(R.layout.activity_fourth_coupon);
+					mainisopen = false;
+			}
+/*
+ * anzeigen des gutschein_fourth	
+ */
+			public void BtnFourthCoupon (View view ) {
+
+					EditText Gutschein4 = (EditText)findViewById(R.id.etGutschein4);
+					Gutschein4.setText("Ein Gutschein für ein Candlelight Dinner!"); 
+					mainisopen = false;
+					checkBisopen = false; 
+			}			
+/*
+ * oeffnen der fifth_coupon_activity 
+ */
+			public void FifthCoupon (View view) {
+					setContentView(R.layout.activity_fifth_coupon);
+					mainisopen = false;
+			}
+/*
+ * oeffnen der checkbox_acticity_secound	
+ */
+			public void BtnFifthCoupon (View view ) {
+				setContentView(R.layout.activity_checkbox2);
+				mainisopen = false;
+			}			
+/*
+ * oeffnen der fourth_coupon_activity 
+ */
+			public void SixCoupon (View view) {
+				setContentView(R.layout.activity_six_coupon);
+				mainisopen = false;
+			}
+/*
+ * anzeigen des gutschein_fourth	
+ */
+			public void BtnSixCoupon (View view ) {
+
+				EditText Gutschein6 = (EditText)findViewById(R.id.etGutschein6);
+				Gutschein6.setText("Ein Gutschein für 4 Knutsch-Fotos im Passbildautomat (Ecke Löffelfamilie)!"); 
+				mainisopen = false;
+				checkB2isopen = false; 
+				checkBisopen = false;
+			}			
+			
+/*
+ * @see android.app.Activity#onKeyDown(int, android.view.KeyEvent)
+ * Funktionlitaet des zurueck-buttons
+ */
+	@Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+		
+		if (keyCode == KeyEvent.KEYCODE_BACK && checkBisopen == false) {
+			checkBisopen = true;
+			setContentView(R.layout.activity_checkbox); 
+			return true;		
+			}
+		else if (keyCode == KeyEvent.KEYCODE_BACK && checkB2isopen == false) {
+			checkB2isopen = true;
+			setContentView(R.layout.activity_checkbox2); 
+			return true;		
+			}
+		else if (keyCode == KeyEvent.KEYCODE_BACK && mainisopen == false) {
+			mainisopen = true;
+			setContentView(R.layout.activity_main); 
+			return true;		
+			}
+		return super.onKeyDown(keyCode, event); 
+	} 
+	
+	
+}

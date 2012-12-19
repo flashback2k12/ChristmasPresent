@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget"
+    style="@style/WidgetBackground_4_1"
+    android:layout_width="320dp"
+    android:layout_height="100dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/i_love_you_2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/padding_large" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/miss_you"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/padding_large" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:text="@string/i_love_you"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/padding_large" />
+
+</RelativeLayout>

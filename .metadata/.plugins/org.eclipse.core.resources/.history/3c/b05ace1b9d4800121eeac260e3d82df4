@@ -1,0 +1,25 @@
+package com.flashback.christmaspresent;
+
+import android.app.Activity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class FirstCoupon extends Activity {
+
+	private Button buttonFC;
+	
+	public void BtnFirstCoupon (View view) {
+		
+		buttonFC = (Button) findViewById(R.id.button1FC);
+		buttonFC.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(getApplicationContext(), "Gutschein 1", Toast.LENGTH_LONG).show();
+			}
+		});
+	}
+	
+}

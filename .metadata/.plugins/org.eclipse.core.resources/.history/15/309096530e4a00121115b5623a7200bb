@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="WidgetBackground_4_1">
+        <item name="android:background">@drawable/widget_4_1</item>
+    </style>
+    
+	<style name="WidgetTitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="WidgetText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Black" /> 
+    
+    <style name="WidgetBackground2_4_1">
+        <item name="android:background">@drawable/widget2_4_1</item>
+    </style>
+    
+	<style name="WidgetTitle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    
+    <style name="WidgetText">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Black" /> 
+    
+    
+</resources>

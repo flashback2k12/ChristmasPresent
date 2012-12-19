@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    <style name="ThemeTest" parent="android:Theme.Dark" />
+
+</resources>

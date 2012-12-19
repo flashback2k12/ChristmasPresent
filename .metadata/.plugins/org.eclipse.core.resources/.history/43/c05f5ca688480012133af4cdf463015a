@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weihnachtsgeschenk</string>
+    <string name="hello_schatz_z1">Ich wünsche dir alles liebe zum Weihnachtsfest mein Schatz. :-* </string>
+    <string name="hello_schatz_z2">Ich hoffe, dass dir die nächsten Punkte gefallen werden!!! :-)</string><string name="menu_settings">Menü</string>
+    <string name="title_activity_main">Weihnachts-'\n'geschenk</string>
+    
+    <string name="button_first_act">drück mich!</string>
+
+</resources>

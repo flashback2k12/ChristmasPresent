@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etGutschein1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/gutschein1"
+        android:ems="30"
+        android:gravity="center"
+        android:inputType="textMultiLine|textLongMessage" />
+
+    <Button
+        android:id="@+id/button1FC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/etGutschein1"
+        android:layout_marginTop="47dp"
+        android:onClick="BtnFirstCoupon"
+        android:text="@string/button_standard" />
+
+</RelativeLayout>

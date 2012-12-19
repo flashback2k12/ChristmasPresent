@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:onClick="FirstCoupon"
+        android:text="@string/checkbox1" />
+
+    <Button
+        android:id="@+id/Button07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="20dp"
+        android:onClick="SecoundCoupon"
+        android:text="@string/checkbox2" />
+
+    <Button
+        android:id="@+id/Button08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button06"
+        android:layout_below="@+id/Button06"
+        android:layout_marginTop="20dp"
+        android:onClick="ThirdCoupon"
+        android:text="@string/checkbox3" />
+
+    <Button
+        android:id="@+id/Button09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button07"
+        android:layout_below="@+id/Button07"
+        android:layout_marginTop="20dp"
+        android:onClick="FourthCoupon"
+        android:text="@string/checkbox4" />
+
+    <Button
+        android:id="@+id/Button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Button08"
+        android:layout_below="@+id/Button08"
+        android:layout_marginTop="20dp"
+        android:onClick="FifthCoupon"
+        android:text="@string/checkbox5" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weihnachtsgeschenk</string>
+    <string name="title_activity_main">Weihnachtsgeschenk</string><string name="menu_settings">Menü</string><string name="hello_schatz_z1">Ich wünsche dir alles liebe zum Weihnachtsfest mein Schatz. :-* </string>
+    <string name="hello_schatz_z2">Ich hoffe, dass dir die nächsten Punkte gefallen werden!!! :-)</string>
+    
+    <string name="button_standard">drück mich!</string>
+    <string name="button_zurueck">zurück :-*</string><string name="checkbox1">Gutschein 1</string>
+    <string name="checkbox2">Gutschein 2</string>
+    <string name="checkbox3">Gutschein 3</string>
+    <string name="checkbox4">Gutschein 4</string>
+    <string name="checkbox5">Gutschein 5</string>
+    <string name="gutschein1">Ein Gutschein für einen Kinobesuch deiner Wahl!</string>
+    <string name="gutschein2">Ein Gutschein zum Essen gehen deiner Wahl!</string>
+    <string name="gutschein3">Ein Gutschein für eine Massage!</string>
+    <string name="gutschein4">Ein Gutschein für ein Candlelight Dinner!</string>
+    <string name="gutschein5">Ein Gutschein für 4 Knutsch-Fotos im Passbildautomat (Ecke Löffelfamilie)!</string>
+    
+
+</resources>

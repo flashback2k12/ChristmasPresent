@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flashback.christmaspresent"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:allowBackup="false">
+        <activity
+            android:name="com.flashback.christmaspresent.MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name=".WidgetProvider4_1" android:label="@string/app_widget_4_1_christmas" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ACTIVITY"/>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ALARM"/>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_WIDGET"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_4_1" />
+        </receiver>
+        
+    </application>
+
+</manifest>

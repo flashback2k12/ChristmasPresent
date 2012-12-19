@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="Deprecated">
+        <ignore path="res\layout\activity_first_coupon.xml" />
+        <ignore path="res\layout\activity_fourth_coupon.xml" />
+        <ignore path="res\layout\activity_secound_coupon.xml" />
+        <ignore path="res\layout\activity_third_coupon.xml" />
+    </issue>
+</lint>
